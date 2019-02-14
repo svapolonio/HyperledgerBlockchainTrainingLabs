@@ -14,9 +14,14 @@ Blockchain training lab
 Run this on your terminal: 
 
 go get github.com/golang/protobuf/proto
+
 go get github.com/hyperledger/fabric/common/attrmgr
+
 go get github.com/pkg/errors
+
 go get github.com/hyperledger/fabric/core/chaincode/lib/cid
+
+
 
 5. Open your file manager go to Home/go/src/github.com
 	copy three folders and paste it inside fabric-samples/chaincode:
@@ -41,16 +46,16 @@ Now open the body tab, click the x-www-form-url-encoded, you should see a form t
 
 KEY                      	VALUE
 
-invoicenumber           INVOICE001
+invoicenumber           	INVOICE001
 billedto                	OEM
 invoicedate             	02/08/19
-invoiceamount          	10000
+invoiceamount          		10000
 itemdescription         	KEYBOARD
 goodreceived            	False
 ispaid                  	False
 paidamount              	0
-repaid                 	False
-repaymentamount       0
+repaid                 		False
+repaymentamount       		0
 
 Now click send, the result should be ‘success’
 We have now successfully raise an invoice
